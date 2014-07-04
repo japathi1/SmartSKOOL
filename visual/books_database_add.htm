@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 11.00.9600.16659"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable cellPadding=0>
+  <TBODY>
+  <TR class=runner-header>
+    <TD class=runner-top colSpan=3>
+      {BEGIN container_add}
+      <TABLE class="runner-c runner-c-add" cellPadding=0 align=center>
+        <TBODY>
+        <TR class="runner-toprow style2 header">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc>
+            
+            <DIV class="runner-b-addheader {$brickclass_addheader}">Books 
+            Database, Add new record</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN message_block}<TR class="runner-row style1 runner-b-message {$brickclass_message}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents">
+            
+            <DIV class=runner-message>{$message}</DIV></TD>
+          <TD class=runner-cr></TD></TR>
+        {END message_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper">
+            
+            {BEGIN container_fields}
+            <TABLE class="runner-c runner-c-fields" cellPadding=0>
+              <TBODY>
+              <TR class="{$cheaderclass_fields}">
+                <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class="runner-cc alt"></TD>
+                <TD class="runner-cr alt"><IMG src="images/spacer.gif"></TD></TR>
+              {BEGIN BookTitle_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BookTitle {$fielddispclass_BookTitle}">{BEGIN BookTitle_label}Book Title {END BookTitle_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BookTitle {$fielddispclass_BookTitle}">{$BookTitle_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BookTitle_fieldblock}{BEGIN CoverImage_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_CoverImage {$fielddispclass_CoverImage}">{BEGIN CoverImage_label}Cover Image {END CoverImage_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_CoverImage {$fielddispclass_CoverImage}">{$CoverImage_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END CoverImage_fieldblock}{BEGIN ISBN_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_ISBN {$fielddispclass_ISBN}">{BEGIN ISBN_label}ISBN {END ISBN_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV class="fieldcontrol_ISBN {$fielddispclass_ISBN}">{$ISBN_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END ISBN_fieldblock}{BEGIN BarCodeNr_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BarCodeNr {$fielddispclass_BarCodeNr}">{BEGIN BarCodeNr_label}Bar Code Nr {END BarCodeNr_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BarCodeNr {$fielddispclass_BarCodeNr}">{$BarCodeNr_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BarCodeNr_fieldblock}{BEGIN BookTypeID_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BookTypeID {$fielddispclass_BookTypeID}">{BEGIN BookTypeID_label}Book Type (subject) {END BookTypeID_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BookTypeID {$fielddispclass_BookTypeID}">{$BookTypeID_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BookTypeID_fieldblock}{BEGIN Publisher_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Publisher {$fielddispclass_Publisher}">{BEGIN Publisher_label}Publisher {END Publisher_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Publisher {$fielddispclass_Publisher}">{$Publisher_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Publisher_fieldblock}{BEGIN Language_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Language {$fielddispclass_Language}">{BEGIN Language_label}Language {END Language_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Language {$fielddispclass_Language}">{$Language_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Language_fieldblock}{BEGIN BarCodeScan_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BarCodeScan {$fielddispclass_BarCodeScan}">{BEGIN BarCodeScan_label}Bar Code Scan {END BarCodeScan_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BarCodeScan {$fielddispclass_BarCodeScan}">{$BarCodeScan_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BarCodeScan_fieldblock}{BEGIN Author_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Author {$fielddispclass_Author}">{BEGIN Author_label}Author {END Author_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Author {$fielddispclass_Author}">{$Author_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Author_fieldblock}{BEGIN QRCodeScan_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_QRCodeScan {$fielddispclass_QRCodeScan}">{BEGIN QRCodeScan_label}QRCode Scan {END QRCodeScan_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_QRCodeScan {$fielddispclass_QRCodeScan}">{$QRCodeScan_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END QRCodeScan_fieldblock}{BEGIN BookCondition_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BookCondition {$fielddispclass_BookCondition}">{BEGIN BookCondition_label}Book Condition {END BookCondition_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BookCondition {$fielddispclass_BookCondition}">{$BookCondition_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BookCondition_fieldblock}{BEGIN Edition_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Edition {$fielddispclass_Edition}">{BEGIN Edition_label}Edition {END Edition_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Edition {$fielddispclass_Edition}">{$Edition_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Edition_fieldblock}{BEGIN YearOfTheEdition_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_YearOfTheEdition {$fielddispclass_YearOfTheEdition}">{BEGIN YearOfTheEdition_label}Year Of The Edition {END YearOfTheEdition_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_YearOfTheEdition {$fielddispclass_YearOfTheEdition}">{$YearOfTheEdition_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END YearOfTheEdition_fieldblock}{BEGIN Author2_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Author2 {$fielddispclass_Author2}">{BEGIN Author2_label}Author2 {END Author2_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Author2 {$fielddispclass_Author2}">{$Author2_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Author2_fieldblock}{BEGIN Author3_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Author3 {$fielddispclass_Author3}">{BEGIN Author3_label}Author3 {END Author3_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Author3 {$fielddispclass_Author3}">{$Author3_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Author3_fieldblock}{BEGIN Author4_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Author4 {$fielddispclass_Author4}">{BEGIN Author4_label}Author4 {END Author4_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_Author4 {$fielddispclass_Author4}">{$Author4_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Author4_fieldblock}{BEGIN Price_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_Price {$fielddispclass_Price}">{BEGIN Price_label}Price {END Price_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV class="fieldcontrol_Price {$fielddispclass_Price}">{$Price_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END Price_fieldblock}{BEGIN PurchasedOrDonated_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_PurchasedOrDonated {$fielddispclass_PurchasedOrDonated}">{BEGIN PurchasedOrDonated_label}Purchased Or Donated {END PurchasedOrDonated_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_PurchasedOrDonated {$fielddispclass_PurchasedOrDonated}">{$PurchasedOrDonated_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END PurchasedOrDonated_fieldblock}{BEGIN PurchasedOrDonatedOn_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_PurchasedOrDonatedOn {$fielddispclass_PurchasedOrDonatedOn}">{BEGIN PurchasedOrDonatedOn_label}Purchased Or Donated On {END PurchasedOrDonatedOn_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_PurchasedOrDonatedOn {$fielddispclass_PurchasedOrDonatedOn}">{$PurchasedOrDonatedOn_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END PurchasedOrDonatedOn_fieldblock}{BEGIN DonatedBy_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_DonatedBy {$fielddispclass_DonatedBy}">{BEGIN DonatedBy_label}Donated By {END DonatedBy_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_DonatedBy {$fielddispclass_DonatedBy}">{$DonatedBy_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END DonatedBy_fieldblock}{BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>
+                  <SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></TD>
+                <TD class=runner-cr></TD></TR>
+              {END legend}<TR 
+              class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>
+                  {BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Add the Book</A> 
+                  </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> 
+                  </SPAN>{END cancel_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to 
+                  list</A> </SPAN>{END back_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back to menu</A> </SPAN>{END backToMenu_button}</TD>
+                <TD class=runner-cr></TD></TR>
+              <TR class="{$cfooterclass_fields}">
+                <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_add}">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_add}</TD></TR>
+  <TR class=runner-body>
+    <TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer>
+    <TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{$footer}{END body} </BODY></HTML>
