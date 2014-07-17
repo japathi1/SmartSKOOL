@@ -1,0 +1,101 @@
+<div {$pageattrs}>
+
+{BEGIN container_0}
+<table class="runner-c runner-c-0" cellpadding="0" >
+<tr class="{$cheaderclass_0}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+
+<td  class="runner-cc runner-bl runner-b-masterlistheader" {$brickclass_masterlistheader}><span><b><span dir="LTR">Expense Voucher Master: [{$showKeys}]</span></b></span></td>
+
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_0}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_0}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<table class="runner-c runner-c-mastergrid runner-b-masterlistfields" cellpadding="0">
+		<tr class="runner-toprow style1">
+			<th class="runner-cl"><img src="images/spacer.gif"></th>
+			<th class="runner-cc ">Date</th>
+			<th class="runner-cc ">Voucher#</th>
+			<th class="runner-cc ">Expense From Fund</th>
+			<th class="runner-cc ">Expense Head </th>
+			<th class="runner-cc ">Purchase Order#</th>
+			<th class="runner-cc ">Requisition#</th>
+			<th class="runner-cc ">Purchased From (vendor/supplier)</th>
+			<th class="runner-cc ">Payment Mode</th>
+			<th class="runner-cc ">Bank</th>
+			<th class="runner-cc ">Account#</th>
+			<th class="runner-cc ">Check#</th>
+			<th class="runner-cc ">Check Date</th>
+			<th class="runner-cc ">If Cleared</th>
+			<th class="runner-cc runner-clast">Cleared On</th>
+			<th class="runner-cr"><img src="images/spacer.gif"></th>
+		</tr>
+		<tr class="runner-row style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc ">{$Date_mastervalue}</td>
+			<td class="runner-cc ">{$Voucher__mastervalue}</td>
+			<td class="runner-cc ">{$ExpenseFromFund_mastervalue}</td>
+			<td class="runner-cc ">{$ExpenseHead_mastervalue}</td>
+			<td class="runner-cc ">{$PurchaseOrder__mastervalue}</td>
+			<td class="runner-cc ">{$Requisition__mastervalue}</td>
+			<td class="runner-cc ">{$PurchasedFrom_mastervalue}</td>
+			<td class="runner-cc ">{$PaymentMode_mastervalue}</td>
+			<td class="runner-cc ">{$Bank_mastervalue}</td>
+			<td class="runner-cc ">{$Account__mastervalue}</td>
+			<td class="runner-cc ">{$Check__mastervalue}</td>
+			<td class="runner-cc ">{$CheckDate_mastervalue}</td>
+			<td class="runner-cc ">{$IfCleared_mastervalue}</td>
+			<td class="runner-cc runner-clast">{$ClearedOn_mastervalue}</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+		<tr class="runner-bottomrow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc runner-clast"></td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>
+ 
+
+
+
+
+{END container_mastergrid}
+
+</div>
