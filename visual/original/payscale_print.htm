@@ -1,0 +1,262 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_master}
+<table class="runner-c runner-c-master" cellpadding="0" >
+<tr class="{$cheaderclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN mastertable_block}
+<td  class="runner-cc runner-bl runner-b-masterinfoprint" {$brickclass_masterinfoprint}><span>{$showmasterfile}
+</span></td>
+{END mastertable_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_master}
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Payscale</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="runner-s-grid">	
+	<table class="runner-c runner-c-grid" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			{BEGIN record_header}
+					{BEGIN StaffRoleID_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN StaffRoleID_fieldheader}
+	<b>Job Role</b>
+	{END StaffRoleID_fieldheader}
+</th>
+{END StaffRoleID_fieldheadercolumn}
+	{BEGIN FinancialYear_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN FinancialYear_fieldheader}
+	<b>Financial Year</b>
+	{END FinancialYear_fieldheader}
+</th>
+{END FinancialYear_fieldheadercolumn}
+	{BEGIN Head_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN Head_fieldheader}
+	<b>Head</b>
+	{END Head_fieldheader}
+</th>
+{END Head_fieldheadercolumn}
+	{BEGIN FixedOrPercentage_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN FixedOrPercentage_fieldheader}
+	<b>Fixed Or Percentage</b>
+	{END FixedOrPercentage_fieldheader}
+</th>
+{END FixedOrPercentage_fieldheadercolumn}
+	{BEGIN AddOrDeduct_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN AddOrDeduct_fieldheader}
+	<b>Add Or Deduct</b>
+	{END AddOrDeduct_fieldheader}
+</th>
+{END AddOrDeduct_fieldheadercolumn}
+	{BEGIN PercentageOf_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN PercentageOf_fieldheader}
+	<b>Percentage Of</b>
+	{END PercentageOf_fieldheader}
+</th>
+{END PercentageOf_fieldheadercolumn}
+	{BEGIN Amount_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN Amount_fieldheader}
+	<b>Amount</b>
+	{END Amount_fieldheader}
+</th>
+{END Amount_fieldheadercolumn}
+		
+			{END record_header}
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+			{BEGIN endrecordheader_block}
+			<td class="runner-cs">&nbsp;</td>
+			{END endrecordheader_block}
+		</tr>
+	{END grid_header}
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="runner-row style1" {$rowattrs} {$rowstyle} {$rowstyle}>
+		<td class="runner-cl"></td>
+		{BEGIN grid_record}
+				{BEGIN StaffRoleID_fieldcolumn}
+<td  class="runner-cc {$StaffRoleID_class}" {$StaffRoleID_style}>
+	{$StaffRoleID_value}
+</td>
+{END StaffRoleID_fieldcolumn}
+	{BEGIN FinancialYear_fieldcolumn}
+<td  class="runner-cc {$FinancialYear_class}" {$FinancialYear_style}>
+	{$FinancialYear_value}
+</td>
+{END FinancialYear_fieldcolumn}
+	{BEGIN Head_fieldcolumn}
+<td  class="runner-cc {$Head_class}" {$Head_style}>
+	{$Head_value}
+</td>
+{END Head_fieldcolumn}
+	{BEGIN FixedOrPercentage_fieldcolumn}
+<td  class="runner-cc {$FixedOrPercentage_class}" {$FixedOrPercentage_style}>
+	{$FixedOrPercentage_value}
+</td>
+{END FixedOrPercentage_fieldcolumn}
+	{BEGIN AddOrDeduct_fieldcolumn}
+<td  class="runner-cc {$AddOrDeduct_class}" {$AddOrDeduct_style}>
+	{$AddOrDeduct_value}
+</td>
+{END AddOrDeduct_fieldcolumn}
+	{BEGIN PercentageOf_fieldcolumn}
+<td  class="runner-cc {$PercentageOf_class}" {$PercentageOf_style}>
+	{$PercentageOf_value}
+</td>
+{END PercentageOf_fieldcolumn}
+	{BEGIN Amount_fieldcolumn}
+<td  class="runner-cc {$Amount_class}" {$Amount_style}>
+	{$Amount_value}
+</td>
+{END Amount_fieldcolumn}
+
+		{END grid_record}
+		<td class="runner-cr"></td>
+		{BEGIN endrecord_block}
+		<td class="runner-cs">&nbsp;</td>
+		{END endrecord_block}
+	</tr>
+{END grid_row}
+										
+								<tr class="runner-bottomrow style1">
+									<td class="runner-cl"><img src="images/spacer.gif"></td>
+									{BEGIN record_footer}
+									{BEGIN StaffRoleID_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END StaffRoleID_fieldfootercolumn}
+{BEGIN FinancialYear_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END FinancialYear_fieldfootercolumn}
+{BEGIN Head_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END Head_fieldfootercolumn}
+{BEGIN FixedOrPercentage_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END FixedOrPercentage_fieldfootercolumn}
+{BEGIN AddOrDeduct_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END AddOrDeduct_fieldfootercolumn}
+{BEGIN PercentageOf_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END PercentageOf_fieldfootercolumn}
+{BEGIN Amount_fieldfootercolumn}
+<td class="runner-cc runner-clast"></td>
+{END Amount_fieldfootercolumn}
+
+									{END record_footer}
+									<td class="runner-cr"><img src="images/spacer.gif"></td>
+									{BEGIN endrecordtotals_block}
+									<td class="runner-cs"></td>
+									{END endrecordtotals_block}
+								</tr>
+
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -35,6 +35,7 @@
 
 
 <tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-editheader {$brickclass_editheader}">Expense Voucher Master, Edit record [
+Voucher#: {$show_key1}
 ]</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
 
 
@@ -63,6 +64,20 @@
 		</td>
 	<td class="runner-cr alt"><img src="images/spacer.gif"></td></tr>
 {END Date_fieldblock}
+	{BEGIN Voucher__fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_Voucher_ {$fielddispclass_Voucher_}">
+				{BEGIN Voucher__label}Voucher#{END Voucher__label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_Voucher_ {$fielddispclass_Voucher_}">
+				{$Voucher__editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END Voucher__fieldblock}
 	{BEGIN ExpenseFromFund_fieldblock}
 	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
 		<td class="runner-cc runner-cc1">

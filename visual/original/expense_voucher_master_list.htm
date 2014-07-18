@@ -30,6 +30,38 @@
 				<td class="runner-top" colspan=3>
 					
 
+{BEGIN container_master}
+<table class="runner-c runner-c-master" cellpadding="0" >
+<tr class="{$cheaderclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN mastertable_block}
+<td  class="runner-cc runner-bl runner-b-masterinfo" {$brickclass_masterinfo}><span>{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Back to {$backtomasterlink_caption}</b>
+</a></span></td>
+{END mastertable_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_master}
+
 
 
 {BEGIN container_toplinks}
@@ -44,29 +76,6 @@
 <table border="0" cellpadding="0" class="runner-hc">
 <tr>
 
-{BEGIN prints_block}
-<td  class="runner-cc runner-bl runner-b-toplinks_print" {$brickclass_toplinks_print}><span>{BEGIN print_link}
-	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a href="#" class="runner-button" {$printlink_attrs}>Print this page</a>
-	</span>
-{END print_link}
-
-{BEGIN printall_link}
-	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a href="#" class="runner-button" {$printalllink_attrs}>Print all pages</a>
-	</span>
-{END printall_link}
-
-
-
-
-</span></td>
-{END prints_block}
-
 
 {BEGIN asearch_link}
 <td  class="runner-cc runner-bl runner-b-toplinks_advsearch" {$brickclass_toplinks_advsearch}><span>	<span class="runner-btnframe">
@@ -78,24 +87,6 @@
 {END asearch_link}
 
 
-{BEGIN import_link}
-<td  class="runner-cc runner-bl runner-b-toplinks_import" {$brickclass_toplinks_import}><span>	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a href="expense_voucher_master_import.php?{$crosstable_attrs}" class="runner-button" {$importlink_attrs}>Import</a>
-	</span>
-</span></td>
-{END import_link}
-
-
-{BEGIN export_link}
-<td  class="runner-cc runner-bl runner-b-toplinks_export" {$brickclass_toplinks_export}><span>	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a target="_blank" href="expense_voucher_master_export.php" class="runner-button" {$exportlink_attrs}>Export results</a>
-	</span>
-</span></td>
-{END export_link}
 
 
 <td class="runner-cc filler"></td>
@@ -197,14 +188,7 @@
 		</span>
 	{END add_link}
 
-		{BEGIN inlineadd_link}
-		<span class="runner-btnframe">
-		<span class="runner-btnleft"></span>
-		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$inlineaddlink_attrs}>Inline Add</a>
-		</span>
-	{END inlineadd_link}
-
+	
 
 </span></td>
 {END newrecord_controls_block}
@@ -539,12 +523,7 @@
 									{END edit_link}
 									{END edit_column}
 
-																		{BEGIN inlineedit_column}
-									{BEGIN inlineedit_link}
-									<a class="runner-button-img" {$inlineeditlink_attrs} title="Inline Edit"><img class="runner-cicon" src="images/icon_inline_edit_new.gif" alt="Inline Edit"></a>
-									{END inlineedit_link}
-									{END inlineedit_column}
-
+									
 									
 																		{BEGIN view_column}
 									{BEGIN view_link}

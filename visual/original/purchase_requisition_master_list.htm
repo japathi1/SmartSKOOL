@@ -44,29 +44,6 @@
 <table border="0" cellpadding="0" class="runner-hc">
 <tr>
 
-{BEGIN prints_block}
-<td  class="runner-cc runner-bl runner-b-toplinks_print" {$brickclass_toplinks_print}><span>{BEGIN print_link}
-	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a href="#" class="runner-button" {$printlink_attrs}>Print this page</a>
-	</span>
-{END print_link}
-
-{BEGIN printall_link}
-	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a href="#" class="runner-button" {$printalllink_attrs}>Print all pages</a>
-	</span>
-{END printall_link}
-
-
-
-
-</span></td>
-{END prints_block}
-
 
 {BEGIN asearch_link}
 <td  class="runner-cc runner-bl runner-b-toplinks_advsearch" {$brickclass_toplinks_advsearch}><span>	<span class="runner-btnframe">
@@ -202,16 +179,16 @@
 		</span>
 	{END cancelall_link}
 
-	
-	
-		{BEGIN printselected_link}
-		<span class="runner-btnframe" {$printselectedlink_span}>
+		{BEGIN deleteselected_link}
+		<span class="runner-btnframe" {$deleteselectedlink_span}>
 		<span class="runner-btnleft"></span>
 		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$printselectedlink_attrs}>Print selected</a>
+		<a href="#" class="runner-button" {$deleteselectedlink_attrs}>Delete selected</a>
 		</span>
-	{END printselected_link}
+	{END deleteselected_link}
 
+	
+	
 </span></td>
 {END record_controls_block}
 
@@ -391,15 +368,15 @@
 									</th>
 									{END Date_fieldheadercolumn}
 
-																	{BEGIN Note_fieldheadercolumn}
+																	{BEGIN Requisition__fieldheadercolumn}
 									<th class="runner-cc ">
-									{BEGIN Note_fieldheader}
-																				<a {$Note_orderlinkattrs}>
-											Note
+									{BEGIN Requisition__fieldheader}
+																				<a {$Requisition__orderlinkattrs}>
+											Requisition#
 										</a>
-									{END Note_fieldheader}
+									{END Requisition__fieldheader}
 									</th>
-									{END Note_fieldheadercolumn}
+									{END Requisition__fieldheadercolumn}
 
 																	{BEGIN RequestMadeBy_fieldheadercolumn}
 									<th class="runner-cc ">
@@ -411,16 +388,6 @@
 									</th>
 									{END RequestMadeBy_fieldheadercolumn}
 
-																	{BEGIN Requisition__fieldheadercolumn}
-									<th class="runner-cc ">
-									{BEGIN Requisition__fieldheader}
-																				<a {$Requisition__orderlinkattrs}>
-											Requisition#
-										</a>
-									{END Requisition__fieldheader}
-									</th>
-									{END Requisition__fieldheadercolumn}
-
 																	{BEGIN RequiredByDate_fieldheadercolumn}
 									<th class="runner-cc ">
 									{BEGIN RequiredByDate_fieldheader}
@@ -430,6 +397,16 @@
 									{END RequiredByDate_fieldheader}
 									</th>
 									{END RequiredByDate_fieldheadercolumn}
+
+																	{BEGIN Note_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN Note_fieldheader}
+																				<a {$Note_orderlinkattrs}>
+											Note
+										</a>
+									{END Note_fieldheader}
+									</th>
+									{END Note_fieldheadercolumn}
 
 																	{BEGIN Status_fieldheadercolumn}
 									<th class="runner-cc runner-clast">
@@ -466,7 +443,12 @@
 									
 									
 									
-																		</td>	
+																		{BEGIN view_column}
+									{BEGIN view_link}
+									<a class="runner-button-img" {$viewlink_attrs} title="View"><img class="runner-cicon" src="images/icon_view_new.gif" alt="View"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
 									{END listIcons_column}	
 
 																		{BEGIN checkbox_column}
@@ -497,11 +479,11 @@
 	</td>
 {END Date_fieldcolumn}
 
-	{BEGIN Note_fieldcolumn}
-	<td class="runner-cc  {$Note_class}" {$Note_style}>
-		{$Note_value}
+	{BEGIN Requisition__fieldcolumn}
+	<td class="runner-cc  {$Requisition__class}" {$Requisition__style}>
+		{$Requisition__value}
 	</td>
-{END Note_fieldcolumn}
+{END Requisition__fieldcolumn}
 
 	{BEGIN RequestMadeBy_fieldcolumn}
 	<td class="runner-cc  {$RequestMadeBy_class}" {$RequestMadeBy_style}>
@@ -509,17 +491,17 @@
 	</td>
 {END RequestMadeBy_fieldcolumn}
 
-	{BEGIN Requisition__fieldcolumn}
-	<td class="runner-cc  {$Requisition__class}" {$Requisition__style}>
-		{$Requisition__value}
-	</td>
-{END Requisition__fieldcolumn}
-
 	{BEGIN RequiredByDate_fieldcolumn}
 	<td class="runner-cc  {$RequiredByDate_class}" {$RequiredByDate_style}>
 		{$RequiredByDate_value}
 	</td>
 {END RequiredByDate_fieldcolumn}
+
+	{BEGIN Note_fieldcolumn}
+	<td class="runner-cc  {$Note_class}" {$Note_style}>
+		{$Note_value}
+	</td>
+{END Note_fieldcolumn}
 
 	{BEGIN Status_fieldcolumn}
 	<td class="runner-cc runner-clast {$Status_class}" {$Status_style}>
@@ -556,18 +538,18 @@
 									{BEGIN Date_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END Date_fieldheadercolumn}
-{BEGIN Note_fieldheadercolumn}
-<td class="runner-cc "></td>
-{END Note_fieldheadercolumn}
-{BEGIN RequestMadeBy_fieldheadercolumn}
-<td class="runner-cc "></td>
-{END RequestMadeBy_fieldheadercolumn}
 {BEGIN Requisition__fieldheadercolumn}
 <td class="runner-cc "></td>
 {END Requisition__fieldheadercolumn}
+{BEGIN RequestMadeBy_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END RequestMadeBy_fieldheadercolumn}
 {BEGIN RequiredByDate_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END RequiredByDate_fieldheadercolumn}
+{BEGIN Note_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END Note_fieldheadercolumn}
 {BEGIN Status_fieldheadercolumn}
 <td class="runner-cc runner-clast"></td>
 {END Status_fieldheadercolumn}
